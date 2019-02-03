@@ -1,4 +1,4 @@
-//Caleb Final 5
+//revised command console roulette game
 
 #include <iostream>
 #include <cstdlib>
@@ -25,7 +25,6 @@ int main()
     system("cls");
     showInstructions();
     showTheMoney(playerMoney);
-    cout << "BET! " << bet;
     bet = makeABet(bet, playerMoney);
     betType = bet_Type(betType);
     numberBet = number_Bet(numberBet, betType);
@@ -102,7 +101,6 @@ int main()
     int makeABet(int bet, int playerMoney)
     {
         cout << "How much money would you like to bet? $";
-        cout << "BET! " << bet;
         cin >> bet;
 
         do
